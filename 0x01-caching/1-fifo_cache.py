@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """First-In First Out caching module"""
-from collections import OrderedDict
 
 from base_caching import BaseCaching
+
 
 class FIFOCache(BaseCaching):
     """Represents an object that allows storing and
@@ -12,7 +12,6 @@ class FIFOCache(BaseCaching):
     def __init__(self):
         """Initializes the cache"""
         super().__init__()
-        self.cache_data = OrderedDict()
 
     def put(self, key, item):
         """Adds an item in the cache"""
