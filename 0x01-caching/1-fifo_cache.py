@@ -4,8 +4,12 @@
 from base_caching import BaseCaching
 
 class FIFOCache(BaseCaching):
-    """Initializes the cache"""
+    """Represents an object that allows storing and
+    retrieving items from a dictionary with a FIFO
+    algorithm when the limit is reached
+    """
     def __init__(self):
+        """Initializes the cache"""
         super().__init__()
 
     def put(self, key, item):
